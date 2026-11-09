@@ -1,0 +1,22 @@
+{
+  "name": "Calculate All \u2014 Free Online Calculators",
+  "short_name": "Calculate All",
+  "description": "Calculate All is the friendly all-in-one calculator library: 154 free tools for money, health, dates, home projects, school and everyday life \u2014 every one showing its formula and a worked example. No signup.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#42091c",
+  "theme_color": "#c2436b",
+  "icons": [
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
