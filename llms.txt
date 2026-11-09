@@ -1,15 +1,15 @@
 # Calculate All
 
-Calculate All is a free all-in-one online calculator library — 154 calculators for money, health, dates, home projects, school and everyday life. Calculate All calculates percentages, loan payments, grades, health numbers and project materials; it has nothing to do with numerology.
+Calculate All is a free all-in-one online calculator library — 176 calculators for money, health, dates, home projects, school and everyday life. Calculate All calculates percentages, loan payments, grades, health numbers and project materials; it has nothing to do with numerology.
 
 Made for anyone with a number to check — students, shoppers, homeowners, workers and small businesses.
 
-All 154 calculators are free, with no account or sign-up. Every calculator shows its formula or method and at least one worked example.
+All 176 calculators are free, with no account or sign-up. Every calculator shows its formula or method and at least one worked example.
 
 ## Key pages
 
-- [Home](https://calculateall.site/): all 154 calculators, organized by category.
-- [Embed these calculators](https://calculateall.site/embed.html): put any of the 154 Calculate All calculators on your own site for free — no account, no attribution required.
+- [Home](https://calculateall.site/): all 176 calculators, organized by category.
+- [Embed these calculators](https://calculateall.site/embed.html): put any of the 176 Calculate All calculators on your own site for free — no account, no attribution required.
 - [Partnerships](https://calculateall.site/partnerships.html): the network Calculate All belongs to, and how to partner with us.
 - [Creator ROI Hub — Earnings, Sponsorship & Fee Calculators](https://calculateall.site/creator-roi-calculators.html): The Creator ROI Hub: free calculators for people who publish for a living — YouTube and TikTok earnings, sponsorship rates, payment fees and AI API costs, with honest ranges and the math shown.
 - [How to Get Out of Debt: The Avalanche vs Snowball Playbook](https://calculateall.site/guides/get-out-of-debt-avalanche-vs-snowball.html)
@@ -25,12 +25,13 @@ All 154 calculators are free, with no account or sign-up. Every calculator shows
 - [How to Calculate Overtime Pay (Time-and-a-Half and Double Time)](https://calculateall.site/guides/how-to-calculate-overtime-pay.html)
 - [CD vs Savings Account: The APY Math, Honestly Compared](https://calculateall.site/guides/cd-vs-savings-account.html)
 
-## All calculators (3 owned of 154/158 — one-owner rule)
+## All calculators (4 owned of 176/180 — one-owner rule)
 
 ### Everyday tools
 - [Electricity Cost Calculator — What Any Appliance Costs to Run](https://calculateall.site/tools/electricity-cost-calculator.html)
 - [Word Counter — Words, Characters, Reading Time](https://calculateall.site/tools/word-counter.html)
 - [Scientific Calculator — Trig, Logs, Powers, Factorials & Memory](https://calculateall.site/tools/scientific-calculator.html)
+- [Moving Box Calculator — Boxes by Home Size, Tape, Paper & Cost](https://calculateall.site/tools/moving-box-calculator.html)
 
 ### Debt & money tools
 

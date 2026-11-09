@@ -35,7 +35,7 @@
   function houseHTML() {
     var deep = /\/(tools|guides)\//.test(location.pathname);
     return '<a class="nn-house" href="' + (deep ? '../' : '') + 'calculators.html">' +
-      '<strong>Calculate All — if it has a number, we calculate it</strong><span>Money, health, dates, home &amp; school — 154 tools. No signup, ever →</span></a>';
+      '<strong>Calculate All — if it has a number, we calculate it</strong><span>Money, health, dates, home &amp; school — 176 tools. No signup, ever →</span></a>';
   }
 
   function watchSeat(el, startedAt) {
