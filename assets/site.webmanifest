@@ -1,7 +1,7 @@
 {
-  "name": "Calculate All \u2014 Free Online Calculators",
+  "name": "Calculate All — Free Online Calculators",
   "short_name": "Calculate All",
-  "description": "Calculate All is the friendly all-in-one calculator library: 154 free tools for money, health, dates, home projects, school and everyday life \u2014 every one showing its formula and a worked example. No signup.",
+  "description": "Calculate All is the friendly all-in-one calculator library: 154 free tools for money, health, dates, home projects, school and everyday life — every one showing its formula and a worked example. No signup.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -17,6 +17,12 @@
       "src": "/assets/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
