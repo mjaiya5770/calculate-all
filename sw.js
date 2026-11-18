@@ -1,6 +1,6 @@
 /* Calculate All service worker — app-shell cache, network-first for pages.
    Calculators keep working offline once visited; ads and APIs are never intercepted. */
-const CACHE = 'calculateall-v16';
+const CACHE = 'calculateall-v17';
 const SHELL = [
   '/',
   '/index.html',
