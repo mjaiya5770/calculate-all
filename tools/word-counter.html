@@ -56,6 +56,7 @@
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8058544460943611" crossorigin="anonymous"></script>
 <!-- NN-EMBED --><script>if(/[?&]embed=1(&|$)/.test(window.location.search))document.documentElement.classList.add("nn-embed");</script>
+<script>if(/[?&]embed=1(&|$)/.test(window.location.search))window.location.replace("../widgets/word-counter.html?embed=1");</script>
 </head>
 <body>
 <header class="site-header">
@@ -69,31 +70,15 @@
   <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../calculators.html#cat-everyday-tools">Everyday tools</a> › Free Word Counter</div>
 <div class="nn-ad nn-ad-top" data-k728="ab9e79ede079c185ef0ed4e3a531e241" data-k320="bea7b5819df81ab3a84031d5877921ce"><div class="nn-ad-label">Advertisement</div><a class="nn-house" href="../calculators.html"><strong>Calculate All — if it has a number, we calculate it</strong><span>Money, health, dates, home &amp; school — 176 tools. No signup, ever →</span></a></div>
   <h1 class="tool-title">Free Word Counter</h1>
+   <div class="card nn-use-cta">
+     <h2>Use the Free Word Counter calculator</h2>
+     <p>The calculator itself lives on the landing page — open it there and it is ready in the module, sized to fit your screen with no scrolling through a long page to find the form.</p>
+     <p><a class="btn" href="../index.html?use=tools/word-counter.html">Open the Free Word Counter calculator &rarr;</a></p>
+   </div>
+   
   <p class="lede">Paste or type your text below — word count, character count, sentences, paragraphs, and reading time update live as you type.</p>
 
-  <div class="card nn-calc-card">
-    <div class="field">
-      <label for="wctext">Your text</label>
-      <textarea id="wctext" placeholder="Start typing or paste your text here…" oninput="count()"></textarea>
-    </div>
-    <div class="nn-actions no-print" data-nn-actions>
-  <button type="button" class="nn-btn" data-nn="share">🔗 Copy link to this result</button>
-  <button type="button" class="nn-btn" data-nn="copy">📋 Copy result</button>
-  <button type="button" class="nn-btn" data-nn="save">💾 Save this calculation</button>
-  <button type="button" class="nn-btn" data-nn="print">🖨️ Print / Save PDF</button>
-</div>
-<div class="nn-saves no-print" id="nnSavesPanel" hidden></div>
-<p class="nn-embed-link no-print"><a href="../embed.html#word-counter">Embed this calculator on your site — free</a></p>
-<div class="stat-grid">
-      <div class="stat"><div class="v" id="sWords">0</div><div class="k">Words</div></div>
-      <div class="stat"><div class="v" id="sChars">0</div><div class="k">Characters</div></div>
-      <div class="stat"><div class="v" id="sNoSpace">0</div><div class="k">Characters (no spaces)</div></div>
-      <div class="stat"><div class="v" id="sSent">0</div><div class="k">Sentences</div></div>
-      <div class="stat"><div class="v" id="sPara">0</div><div class="k">Paragraphs</div></div>
-      <div class="stat"><div class="v" id="sRead">0 sec</div>
-<div class="nn-signature no-print" data-nn-signature hidden><div class="nn-sig-title">Your text at a glance</div><div class="nn-sig-body"></div></div><div class="k">Reading time</div></div>
-    </div>
-  </div>
+  
 <div class="nn-ad" data-key="f2eab068dfdb6d9fb1bf7f731bc44b89" data-w="300" data-h="250"><div class="nn-ad-label">Advertisement</div><a class="nn-house" href="../calculators.html"><strong>Calculate All — if it has a number, we calculate it</strong><span>Money, health, dates, home &amp; school — 176 tools. No signup, ever →</span></a></div>
 
   <div class="card">
@@ -145,7 +130,12 @@
   
 </main>
 <div class="nn-ad nn-ad-bottom" data-key="f2eab068dfdb6d9fb1bf7f731bc44b89" data-w="300" data-h="250"><div class="nn-ad-label">Advertisement</div><a class="nn-house" href="../calculators.html"><strong>Calculate All — if it has a number, we calculate it</strong><span>Money, health, dates, home &amp; school — 176 tools. No signup, ever →</span></a></div>
-<section class="related-tools">
+<div class="card nn-use-cta">
+     <h2>Ready to run your numbers?</h2>
+     <p>The calculator itself lives on the landing page — open it there and it is ready in the module, sized to fit your screen with no scrolling through a long page to find the form.</p>
+     <p><a class="btn" href="../index.html?use=tools/word-counter.html">Open the Free Word Counter calculator &rarr;</a></p>
+   </div>
+   <section class="related-tools">
   <h2>Related tools</h2>
   <ul>
     <li><a href="password-generator.html">Password Generator</a></li>
@@ -155,41 +145,7 @@
   </ul>
 </section>
 <footer class="site-footer"><div class="wrap"><div>© 2026 Calculate All</div><div><a href="../terms.html">Terms</a> · <a href="../privacy.html">Privacy</a> · <a href="../index.html">All tools</a> · <a href="../calculators.html">Calculators</a> · <a href="../embed.html">Embed</a> · <a href="../partnerships.html">Partnerships</a> · <a href="../creator-roi-calculators.html">Creator ROI</a></div></div></footer>
-<script>
-function count(){
-  const t=document.getElementById('wctext').value;
-  const words=(t.trim().match(/\S+/g)||[]).length;
-  const chars=t.length;
-  const noSpace=t.replace(/\s/g,'').length;
-  const sent=t.split(/[.!?]+/).filter(s=>s.trim().length>0).length;
-  const para=t.split(/\n+/).filter(s=>s.trim().length>0).length;
-  const secs=Math.round(words/200*60);
-  let read;
-  if(words===0)read='0 sec';
-  else if(secs<60)read=secs+' sec';
-  else read=Math.floor(secs/60)+' min '+(secs%60)+' sec';
-  document.getElementById('sWords').textContent=words.toLocaleString('en-US');
-  document.getElementById('sChars').textContent=chars.toLocaleString('en-US');
-  document.getElementById('sNoSpace').textContent=noSpace.toLocaleString('en-US');
-  document.getElementById('sSent').textContent=sent.toLocaleString('en-US');
-  document.getElementById('sPara').textContent=para.toLocaleString('en-US');
-  document.getElementById('sRead').textContent=read;
 
-  sigSet(null,sigLadderHTML([['Words',words.toLocaleString('en-US')],['Characters',chars.toLocaleString('en-US')],['Characters (no spaces)',noSpace.toLocaleString('en-US')],['Sentences',sent.toLocaleString('en-US')],['Paragraphs',para.toLocaleString('en-US')],['Reading time',read]],'Reading time assumes 200 words a minute — the average adult silent-reading speed.'));
-}
-count();
-
-/*P4SIG*/
-function sigSlotBody(){var s=document.querySelector('[data-nn-signature]');return s?s.querySelector('.nn-sig-body'):null;}
-function sigSet(title,html){var b=sigSlotBody();if(!b)return;b.innerHTML=(title?'<p class="sig-title">'+title+'</p>':'')+html;}
-function sigMoney(v){return (v<0?'-$':'$')+Math.abs(Math.round(v)).toLocaleString('en-US');}
-var fmt0=(typeof fmt0==='function')?fmt0:function(n){return n.toLocaleString('en-US',{maximumFractionDigits:0});};
-var fmt1=(typeof fmt1==='function')?fmt1:function(n){return n.toLocaleString('en-US',{minimumFractionDigits:1,maximumFractionDigits:1});};
-var money=(typeof money==='function')?money:function(n){return '$'+Number(n).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});};
-var money0=(typeof money0==='function')?money0:function(n){return '$'+Math.round(n).toLocaleString('en-US');};
-
-function sigLadderHTML(steps,note){var h='<div class="sig-ladder">';for(var i=0;i<steps.length;i++){var s=steps[i];h+='<div class="sig-lstep"><span class="sig-lstep-main"><span class="sig-dot s-'+(i%4===0?'a':i%4===1?'b':i%4===2?'c':'d')+'"></span>'+s[0]+'</span><strong>'+s[1]+'</strong></div>';if(s[2]){h+='<div class="sig-lstep-sub">'+s[2]+'</div>';}}h+='</div>';if(note){h+='<p class="sig-note">'+note+'</p>';}return h;}
-</script>
 <script src="../assets/ads.js"></script>
 <script src="../assets/track.js"></script>
 <script src="../assets/nn-tools.js"></script>

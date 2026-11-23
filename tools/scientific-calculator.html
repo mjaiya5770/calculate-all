@@ -88,6 +88,7 @@
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8058544460943611" crossorigin="anonymous"></script>
 <!-- NN-EMBED --><script>if(/[?&]embed=1(&|$)/.test(window.location.search))document.documentElement.classList.add("nn-embed");</script>
+<script>if(/[?&]embed=1(&|$)/.test(window.location.search))window.location.replace("../widgets/scientific-calculator.html?embed=1");</script>
 </head>
 <body>
 <header class="site-header">
@@ -101,89 +102,15 @@
   <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../calculators.html#cat-everyday-tools">Everyday tools</a> › Scientific Calculator</div>
 <div class="nn-ad nn-ad-top" data-k728="ab9e79ede079c185ef0ed4e3a531e241" data-k320="bea7b5819df81ab3a84031d5877921ce"><div class="nn-ad-label">Advertisement</div><a class="nn-house" href="../calculators.html"><strong>Calculate All — if it has a number, we calculate it</strong><span>Money, health, dates, home &amp; school — 176 tools. No signup, ever →</span></a></div>
   <h1 class="tool-title">Scientific Calculator</h1>
+   <div class="card nn-use-cta">
+     <h2>Use the Scientific Calculator</h2>
+     <p>The calculator itself lives on the landing page — open it there and it is ready in the module, sized to fit your screen with no scrolling through a long page to find the form.</p>
+     <p><a class="btn" href="../index.html?use=tools/scientific-calculator.html">Open the Scientific Calculator &rarr;</a></p>
+   </div>
+   
   <p class="lede">A full scientific calculator in your browser: trig, logs, powers, factorials, memory keys and a history tape — and you can type expressions like sin(45) + 3^2 straight from your keyboard.</p>
 
-  <div class="card nn-calc-card">
-
-    <style>
-      .keypad{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:14px}
-      .key{padding:12px 4px;border:none;border-radius:10px;background:var(--teal-light);color:var(--teal-dark);font-weight:700;font-size:1rem;cursor:pointer;font-family:inherit}
-      .key:hover{filter:brightness(.96)}
-      .key.op{background:linear-gradient(135deg,var(--teal),var(--teal-dark));color:#fff}
-      .key.fn{background:var(--surface);border:1px solid var(--border-strong);color:var(--teal-dark);font-weight:600;font-size:.92rem}
-      #disp{width:100%;font-size:1.5rem;font-weight:700;padding:14px;border:2px solid var(--border-strong);border-radius:12px;text-align:right;background:var(--surface-warm);color:var(--text);font-family:inherit}
-    </style>
-    <label for="disp" style="font-weight:600">Expression <span style="color:var(--muted);font-weight:400">(type it, or tap the keys — Enter calculates)</span></label>
-    <input id="disp" type="text" value="sin(45) + 3^2" autocomplete="off" spellcheck="false">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
-      <span style="color:var(--muted);font-size:.9rem">Angle mode: <strong id="degLabel">Degrees</strong> · Memory: <strong id="memLabel">empty</strong></span>
-      <span style="color:var(--muted);font-size:.9rem">Supports + − × ÷ ^ √ ! % and functions sin cos tan ln log</span>
-    </div>
-    <div class="keypad" id="keypad">
-      <button type="button" class="key fn" data-ins="("> ( </button>
-      <button type="button" class="key fn" data-ins=")"> ) </button>
-      <button type="button" class="key fn" data-ins="pi">π</button>
-      <button type="button" class="key fn" data-ins="e">e</button>
-      <button type="button" class="key fn" data-act="back">⌫</button>
-      <button type="button" class="key fn" data-ins="sin(">sin</button>
-      <button type="button" class="key fn" data-ins="cos(">cos</button>
-      <button type="button" class="key fn" data-ins="tan(">tan</button>
-      <button type="button" class="key fn" data-ins="ln(">ln</button>
-      <button type="button" class="key fn" data-ins="log(">log</button>
-      <button type="button" class="key fn" data-ins="asin(">sin⁻¹</button>
-      <button type="button" class="key fn" data-ins="acos(">cos⁻¹</button>
-      <button type="button" class="key fn" data-ins="atan(">tan⁻¹</button>
-      <button type="button" class="key fn" data-ins="sqrt(">√</button>
-      <button type="button" class="key fn" data-ins="^2">x²</button>
-      <button type="button" class="key fn" data-ins="^">xʸ</button>
-      <button type="button" class="key fn" data-ins="!">!</button>
-      <button type="button" class="key fn" data-act="recip">1/x</button>
-      <button type="button" class="key fn" data-ins="ans">Ans</button>
-      <button type="button" class="key fn" data-act="clear">AC</button>
-      <button type="button" class="key fn" data-act="mc">MC</button>
-      <button type="button" class="key fn" data-act="mr">MR</button>
-      <button type="button" class="key fn" data-act="ms">MS</button>
-      <button type="button" class="key fn" data-act="mplus">M+</button>
-      <button type="button" class="key fn" data-act="mminus">M−</button>
-      <button type="button" class="key" data-ins="7">7</button>
-      <button type="button" class="key" data-ins="8">8</button>
-      <button type="button" class="key" data-ins="9">9</button>
-      <button type="button" class="key op" data-ins="/">÷</button>
-      <button type="button" class="key fn" data-act="deg">Deg</button>
-      <button type="button" class="key" data-ins="4">4</button>
-      <button type="button" class="key" data-ins="5">5</button>
-      <button type="button" class="key" data-ins="6">6</button>
-      <button type="button" class="key op" data-ins="*">×</button>
-      <button type="button" class="key fn" data-act="neg">±</button>
-      <button type="button" class="key" data-ins="1">1</button>
-      <button type="button" class="key" data-ins="2">2</button>
-      <button type="button" class="key" data-ins="3">3</button>
-      <button type="button" class="key op" data-ins="-">−</button>
-      <button type="button" class="key op" data-ins="+">+</button>
-      <button type="button" class="key" data-ins="0" style="grid-column:span 2">0</button>
-      <button type="button" class="key" data-ins=".">.</button>
-      <button type="button" class="key fn" data-ins="%">%</button>
-      <button type="button" class="key op" data-act="eq">=</button>
-    </div>
-
-    <button class="btn" onclick="calc()">Calculate (=)</button>
-    <div class="nn-actions no-print" data-nn-actions>
-  <button type="button" class="nn-btn" data-nn="share">🔗 Copy link to this result</button>
-  <button type="button" class="nn-btn" data-nn="copy">📋 Copy result</button>
-  <button type="button" class="nn-btn" data-nn="save">💾 Save this calculation</button>
-  <button type="button" class="nn-btn" data-nn="print">🖨️ Print / Save PDF</button>
-</div>
-<div class="nn-saves no-print" id="nnSavesPanel" hidden></div>
-<p class="nn-embed-link no-print"><a href="../embed.html#scientific-calculator">Embed this calculator on your site — free</a></p>
-<div class="results" id="results">
-      <div style="color:var(--muted);font-size:.9rem">Answer</div>
-      <div id="verdict" style="font-weight:700;font-size:1.02rem;margin:2px 0 6px"></div>
-      <div class="big" id="rMain">—</div>
-      <table><tbody id="rows"></tbody></table>
-    
-<div class="nn-signature no-print" data-nn-signature hidden><div class="nn-sig-title">This calculation</div><div class="nn-sig-body"></div></div>
-</div>
-  </div>
+  
 <div class="nn-ad" data-key="f2eab068dfdb6d9fb1bf7f731bc44b89" data-w="300" data-h="250"><div class="nn-ad-label">Advertisement</div><a class="nn-house" href="../calculators.html"><strong>Calculate All — if it has a number, we calculate it</strong><span>Money, health, dates, home &amp; school — 176 tools. No signup, ever →</span></a></div>
 
   <div class="card">
@@ -245,7 +172,12 @@
   </div>
 </main>
 <div class="nn-ad nn-ad-bottom" data-key="f2eab068dfdb6d9fb1bf7f731bc44b89" data-w="300" data-h="250"><div class="nn-ad-label">Advertisement</div><a class="nn-house" href="../calculators.html"><strong>Calculate All — if it has a number, we calculate it</strong><span>Money, health, dates, home &amp; school — 176 tools. No signup, ever →</span></a></div>
-<section class="related-tools">
+<div class="card nn-use-cta">
+     <h2>Ready to run your numbers?</h2>
+     <p>The calculator itself lives on the landing page — open it there and it is ready in the module, sized to fit your screen with no scrolling through a long page to find the form.</p>
+     <p><a class="btn" href="../index.html?use=tools/scientific-calculator.html">Open the Scientific Calculator &rarr;</a></p>
+   </div>
+   <section class="related-tools">
   <h2>Related tools</h2>
   <ul>
     <li><a href="fraction-calculator.html">Fraction Calculator</a></li>
@@ -258,115 +190,7 @@
   </ul>
 </section>
 <footer class="site-footer"><div class="wrap"><div>© 2026 Calculate All</div><div><a href="../terms.html">Terms</a> · <a href="../privacy.html">Privacy</a> · <a href="../index.html">All tools</a> · <a href="../calculators.html">Calculators</a> · <a href="../embed.html">Embed</a> · <a href="../partnerships.html">Partnerships</a> · <a href="../creator-roi-calculators.html">Creator ROI</a></div></div></footer>
-<script>
 
-/*PURE-BEGIN*/
-function sciGamma(z){var p=[0.99999999999980993,676.5203681218851,-1259.1392167224028,771.32342877765313,-176.61502916214059,12.507343278686905,-0.13857109526572012,9.9843695780195716e-6,1.5056327351493116e-7];if(z<0.5)return Math.PI/(Math.sin(Math.PI*z)*sciGamma(1-z));z-=1;var x=p[0];for(var i=1;i<p.length;i++)x+=p[i]/(z+i);var t=z+p.length-1.5;return Math.sqrt(2*Math.PI)*Math.pow(t,z+0.5)*Math.exp(-t)*x;}
-function sciFact(n){if(Math.floor(n)===n&&n<0)throw new Error('factorial of a negative integer');if(Math.floor(n)===n){var r=1;for(var i=2;i<=n;i++)r*=i;return r;}return sciGamma(n+1);}
-function sciTokenize(s){var toks=[],i=0;while(i<s.length){var c=s[i];
-  if(c===' '||c==='\t'){i++;continue;}
-  if(/[0-9.]/.test(c)){var j=i,num='';while(j<s.length&&/[0-9.]/.test(s[j])){num+=s[j];j++;}if(num==='.' )throw new Error('bad number');toks.push({t:'num',v:parseFloat(num)});i=j;continue;}
-  if(/[a-zA-Z]/.test(c)){var k=i,w='';while(k<s.length&&/[a-zA-Z]/.test(s[k])){w+=s[k];k++;}toks.push({t:'id',v:w.toLowerCase()});i=k;continue;}
-  if('+-*/^'.indexOf(c)>=0){toks.push({t:'op',v:c});i++;continue;}
-  if(c==='('){toks.push({t:'lp'});i++;continue;}
-  if(c===')'){toks.push({t:'rp'});i++;continue;}
-  if(c==='!'){toks.push({t:'fact'});i++;continue;}
-  if(c==='%'){toks.push({t:'pct'});i++;continue;}
-  throw new Error('bad character: '+c);}return toks;}
-function sciEval(expr,deg,ans){
-  var toks=sciTokenize(expr),pos=0;
-  function peek(){return toks[pos];}
-  function next(){return toks[pos++];}
-  function applyFn(name,x){var d2r=deg?Math.PI/180:1,r2d=deg?180/Math.PI:1;
-    switch(name){case 'sin':return Math.sin(x*d2r);case 'cos':return Math.cos(x*d2r);case 'tan':return Math.tan(x*d2r);
-    case 'asin':return Math.asin(x)*r2d;case 'acos':return Math.acos(x)*r2d;case 'atan':return Math.atan(x)*r2d;
-    case 'ln':return Math.log(x);case 'log':return Math.log(x)/Math.LN10;case 'sqrt':return Math.sqrt(x);case 'abs':return Math.abs(x);}
-    throw new Error('unknown function '+name);}
-  function parseExpr(){var val=parseTerm();while(peek()&&peek().t==='op'&&(peek().v==='+'||peek().v==='-')){var op=next().v;var rhs=parseTerm();val=op==='+'?val+rhs:val-rhs;}return val;}
-  function parseTerm(){var val=parseFactor();while(true){var tk=peek();
-    if(tk&&tk.t==='op'&&(tk.v==='*'||tk.v==='/')){next();var rhs=parseFactor();val=tk.v==='*'?val*rhs:val/rhs;}
-    else if(tk&&(tk.t==='lp'||tk.t==='id'||tk.t==='num')){val=val*parseFactor();}
-    else break;}return val;}
-  function parseFactor(){var base=parsePostfix();var tk=peek();if(tk&&tk.t==='op'&&tk.v==='^'){next();return Math.pow(base,parseFactor());}return base;}
-  function parsePostfix(){var tk=peek();
-    if(tk&&tk.t==='op'&&(tk.v==='-'||tk.v==='+')){next();var sgn=tk.v==='-'?-1:1;return sgn*parsePostfix();}
-    var val=parsePrimary();
-    while(peek()&&(peek().t==='fact'||peek().t==='pct')){var k=next();val=k.t==='fact'?sciFact(val):val/100;}
-    return val;}
-  function parsePrimary(){var tk=next();if(!tk)throw new Error('unexpected end of expression');
-    if(tk.t==='num')return tk.v;
-    if(tk.t==='lp'){var val=parseExpr();var cl=next();if(!cl||cl.t!=='rp')throw new Error('missing closing bracket');return val;}
-    if(tk.t==='id'){
-      if(tk.v==='pi')return Math.PI;if(tk.v==='e')return Math.E;if(tk.v==='tau')return Math.PI*2;if(tk.v==='ans')return ans||0;
-      var open=next();if(!open||open.t!=='lp')throw new Error('expected ( after '+tk.v);
-      var arg=parseExpr();var cl2=next();if(!cl2||cl2.t!=='rp')throw new Error('missing closing bracket');
-      return applyFn(tk.v,arg);}
-    throw new Error('unexpected token');}
-  var result=parseExpr();
-  if(pos<toks.length)throw new Error('extra input after expression');
-  return result;
-}
-/*PURE-END*/
-/*P4SIG*/
-function sigSlotBody(){var s=document.querySelector('[data-nn-signature]');return s?s.querySelector('.nn-sig-body'):null;}
-function sigSet(title,html){var b=sigSlotBody();if(!b)return;b.innerHTML=(title?'<p class="sig-title">'+title+'</p>':'')+html;}
-function sigMoney(v){return (v<0?'-$':'$')+Math.abs(Math.round(v)).toLocaleString('en-US');}
-var fmt0=(typeof fmt0==='function')?fmt0:function(n){return n.toLocaleString('en-US',{maximumFractionDigits:0});};
-var fmt1=(typeof fmt1==='function')?fmt1:function(n){return n.toLocaleString('en-US',{minimumFractionDigits:1,maximumFractionDigits:1});};
-var money=(typeof money==='function')?money:function(n){return '$'+Number(n).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});};
-var money0=(typeof money0==='function')?money0:function(n){return '$'+Math.round(n).toLocaleString('en-US');};
-
-function sigLadderHTML(steps,note){var h='<div class="sig-ladder">';for(var i=0;i<steps.length;i++){var s=steps[i];h+='<div class="sig-lstep"><span class="sig-lstep-main"><span class="sig-dot s-'+(i%4===0?'a':i%4===1?'b':i%4===2?'c':'d')+'"></span>'+s[0]+'</span><strong>'+s[1]+'</strong></div>';if(s[2]){h+='<div class="sig-lstep-sub">'+s[2]+'</div>';}}h+='</div>';if(note){h+='<p class="sig-note">'+note+'</p>';}return h;}
-
-var degMode=true,ansVal=0,memVal=0,memSet=false;
-function disp(){return document.getElementById('disp');}
-function fmtSci(n){if(typeof n!=='number'||isNaN(n))return 'Error';if(!isFinite(n))return n>0?'Infinity':'-Infinity';return ''+parseFloat(n.toPrecision(12));}
-function curVal(){try{return sciEval(disp().value,degMode,ansVal);}catch(e){var p=parseFloat(disp().value);return isNaN(p)?0:p;}}
-function insertTxt(txt){var d=disp();var s=d.selectionStart==null?d.value.length:d.selectionStart,en=d.selectionEnd==null?d.value.length:d.selectionEnd;d.value=d.value.slice(0,s)+txt+d.value.slice(en);d.focus();try{d.selectionStart=d.selectionEnd=s+txt.length;}catch(e){}}
-function memUI(){document.getElementById('memLabel').textContent=memSet?fmtSci(memVal):'empty';}
-function calc(){
-  var expr=disp().value;
-  try{
-    var val=sciEval(expr,degMode,ansVal);
-    var pretty=expr.replace(/\*/g,'×').replace(/\//g,'÷');
-    document.getElementById('verdict').textContent=pretty+' =';
-    document.getElementById('rMain').textContent=fmtSci(val);
-    document.getElementById('rows').innerHTML='<tr><td>Result</td><td>'+fmtSci(val)+'</td></tr><tr><td>Angle mode</td><td>'+(degMode?'Degrees':'Radians')+'</td></tr><tr><td>Stored as Ans</td><td>'+fmtSci(val)+'</td></tr>';
-    var hist=document.getElementById('hist');
-    if(hist.querySelector('li')&&hist.querySelector('li').textContent.indexOf('will appear')>=0)hist.innerHTML='';
-    var li=document.createElement('li');li.style.cursor='pointer';li.textContent=pretty+' = '+fmtSci(val);
-    li.setAttribute('data-expr',expr);
-    li.addEventListener('click',function(){disp().value=this.getAttribute('data-expr');disp().focus();});
-    hist.insertBefore(li,hist.firstChild);
-    ansVal=val;
-    sigSet(null,sigLadderHTML([[pretty,fmtSci(val)],['Angle mode',degMode?'Degrees':'Radians'],['Stored as Ans',fmtSci(val)]],'The answer is kept as Ans — use it in your next expression, or click any line on the history tape to reload it.'));
-  }catch(err){
-    document.getElementById('verdict').textContent='That expression could not be evaluated — check brackets and function names.';
-    document.getElementById('rMain').textContent='Error';
-    document.getElementById('rows').innerHTML='';
-  }
-  document.getElementById('results').classList.add('show');
-}
-document.getElementById('keypad').addEventListener('click',function(ev){
-  var b=ev.target.closest('button');if(!b)return;
-  var ins=b.getAttribute('data-ins'),act=b.getAttribute('data-act'),d=disp();
-  if(ins){insertTxt(ins);return;}
-  if(!act)return;
-  if(act==='back'){var s=d.selectionStart==null?d.value.length:d.selectionStart;if(s>0){d.value=d.value.slice(0,s-1)+d.value.slice(s);d.focus();try{d.selectionStart=d.selectionEnd=s-1;}catch(e){}}}
-  else if(act==='clear'){d.value='';d.focus();}
-  else if(act==='eq'){calc();}
-  else if(act==='deg'){degMode=!degMode;document.getElementById('degLabel').textContent=degMode?'Degrees':'Radians';b.textContent=degMode?'Deg':'Rad';}
-  else if(act==='neg'){if(d.value.charAt(0)==='-')d.value=d.value.slice(1);else d.value='-'+d.value;d.focus();}
-  else if(act==='recip'){if(d.value)d.value='1/('+d.value+')';d.focus();}
-  else if(act==='mc'){memVal=0;memSet=false;memUI();}
-  else if(act==='ms'){memVal=curVal();memSet=true;memUI();}
-  else if(act==='mr'){if(memSet)insertTxt(fmtSci(memVal));}
-  else if(act==='mplus'){memVal=(memSet?memVal:0)+curVal();memSet=true;memUI();}
-  else if(act==='mminus'){memVal=(memSet?memVal:0)-curVal();memSet=true;memUI();}
-});
-disp().addEventListener('keydown',function(ev){if(ev.key==='Enter'){ev.preventDefault();calc();}});
-
-</script>
 <script src="../assets/ads.js"></script>
 <script src="../assets/track.js"></script>
 <script src="../assets/nn-tools.js"></script>
